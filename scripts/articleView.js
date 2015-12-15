@@ -15,6 +15,7 @@ articleView.index = function() {
   } else {
     $.get('/templates/article.html', function(data, msg, xhr) {
       articleView.template = Handlebars.compile(data);
+      console.log("Made it here");
       _renderAll();
     });
   }
